@@ -1,0 +1,158 @@
+:root {
+    --background-color: #040814;
+    --primary-white: #FFFFFF;
+    --blue-button: #167BF7;
+    --blue-button-effect: #006ff6;
+    --secondary-gray: #C0C0C0;
+    --main-font: 'Inter';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--primary-white);
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.section {
+    background-image: url(/img/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__box {
+    margin: 0 6em;
+}
+
+.container__title {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.container__image {
+    margin: 1em 0 2em 0;
+}
+
+.container__button {
+    background-color: var(--blue-button);
+    color: var(--primary-white);
+    display: block;
+    padding: 1em;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.container__secondary__button {
+    background-color: transparent;
+    border: 2px solid var(--primary-white);
+}
+
+.container__button:hover {
+    background-color: var(--blue-button-effect);
+    color: var(--background-color);
+}
+
+.container__alert {
+    font-size: 0.75rem;
+    color: var(--secondary-gray);
+}
+
+.secondary {
+    align-items: center;   
+    margin: 0 10em;
+}
+
+.secondary__image {
+    width: 80%;
+}
+
+.container__description {
+    padding: 2em;
+}
+
+.description__title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 0.1em;
+}
+
+.description__text {
+    color: var(--secondary-gray);
+}
+
+.secondary__button {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__title {
+    color: var(--primary-white);
+    font-size: 48px;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.dispositivos__lista__item {
+    color: var(--primary-white);
+    font-size: 32px;
+}
+
+.footer {
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.footer__image {
+    text-align: center;
+    margin: 2em;
+}
+
+.footer__list__link {
+    display: inline;
+    list-style-type: none;
+    padding: 10px;
+}
+
+.footer a {
+    color: var(--primary-white);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    color: var(--blue-button);
+}
+
+.footer a:active {
+    color: aqua;
+}
+
+.footer__text {
+    color: var(--secondary-gray);
+    font-size: 14px;
+    margin: 2em;
+}
